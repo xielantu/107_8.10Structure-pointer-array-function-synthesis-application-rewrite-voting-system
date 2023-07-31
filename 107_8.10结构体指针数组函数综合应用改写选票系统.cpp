@@ -103,7 +103,7 @@ int main()
 	int total=0;
 
 	//初始化选民信息
-	xm = initXms(xm, &total);
+	xm = initXms(xm, &total);//A函数调B函数，来改变B函数里面的局部变量(total)
 	printXms(xm, total);
 
 
